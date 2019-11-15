@@ -17,6 +17,7 @@
     main {
         align-items: center;
         text-align: center;
+        padding: 1.5rem;
         .lg-heading {
             line-height: 1;
             margin-bottom: 1rem;
@@ -59,8 +60,10 @@
         margin-top: 10vh;
     }
     .about-info {
-        grid-template-columns: 1fr;
         grid-template-areas: 'bioimage''bio''contact';
+        .boxes {
+            font-size: 1.5rem;
+        }
     }
     .projects {
         grid-template-columns: 1fr;
