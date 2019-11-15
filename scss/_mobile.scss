@@ -62,7 +62,10 @@
     .about-info {
         grid-template-areas: 'bioimage''bio''contact';
         .boxes {
-            font-size: 1.5rem;
+            div {
+                font-size: 1.5rem;
+                padding: 0.8rem .9rem;
+            }
         }
     }
     .projects {
