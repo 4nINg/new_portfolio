@@ -85,6 +85,10 @@ main {
     height: 200px;
 }
 
+.bio {
+    grid-area: bio;
+}
+
 .boxes {
     grid-area: contact;
 }
