@@ -262,6 +262,9 @@ main {
   .about-info {
     grid-template-areas: "bioimage" "bio" "contact";
     grid-template-columns: 1fr; }
+    .about-info .boxes div {
+      font-size: 1.5rem;
+      padding: 0.8rem .9rem; }
   .projects {
     grid-template-columns: repeat(2, 1fr); } }
 
