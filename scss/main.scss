@@ -46,9 +46,8 @@ header {
 }
 
 main {
+    min-height: calc(100vh - 60px);
     padding: 4rem;
-    // height: 100%;
-    min-height: calc(100vh-60px);
     .icons {
         margin-top: 1rem;
         a {
@@ -70,7 +69,7 @@ main {
 .about-info {
     display: grid;
     grid-gap: 30px;
-    grid-template-areas: 'bioimage bio bio''job-1 job-2 job-3';
+    grid-template-areas: 'bioimage bio bio''contact contact contact';
     grid-template-columns: repeat(3, 1fr);
 }
 
@@ -86,27 +85,8 @@ main {
     height: 200px;
 }
 
-.bio {
-    grid-area: bio;
-    font-size: 1.5rem;
-}
-
-.job-1 {
-    grid-area: job-1;
-}
-
-.job-2 {
-    grid-area: job-2;
-}
-
-.job-3 {
-    grid-area: job-3;
-}
-
-.job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+.boxes {
+    grid-area: contact;
 }
 
 // Work/Projects
@@ -114,7 +94,8 @@ main {
     display: grid;
     grid-gap: 0.7rem;
     grid-template-columns: repeat(3, 1fr);
-    img {
+    img,
+    video {
         width: 100%;
         border: 3px #fff solid;
         &:hover {
@@ -122,6 +103,9 @@ main {
             border-color: $secondary-color;
             @include easeOut;
         }
+    }
+    video {
+        min-height: 200px;
     }
 }
 
@@ -174,6 +158,7 @@ main {
 }
 
 #main-footer {
+    bottom: 0;
     text-align: center;
     padding: 1rem;
     background: darken($primary-color, 10);
